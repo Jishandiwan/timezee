@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Train+One&display=swap');
+
+
+.loader {
+    position: fixed;
+    z-index: 22222222 !important;
+    top: 0;
+    left: 0;
+    background-color: white !important;
+    animation: load 3s linear;
+    transform: translateX(-100%);
+}
+
+@keyframes load {
+    0% {
+        transform: translateX(0%);
+    }
+
+    95% {
+        left: 0;
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    98% {
+        transform: translateX(0%);
+        left: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+}
+
+.loader .row .col {
+    height: 100vh !important;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.g-font {
+    font-family: "Libre Baskerville", serif !important;
+    font-weight: 400 !important;
+}
+
+.btn {
+    background-color: gray !important;
+    border: none !important;
+    padding: 15px !important;
+    color: white !important;
+}
+
+.thirth-container {
+    background-image: url(../img/Bg1full.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.data-div::before {
+    content: ' ';
+    width: 380px;
+    min-height: 300px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.265);
+    opacity: 1;
+
+}
+
+.data-div:hover.data-div::before {
+    opacity: 111;
+    background-color: rgba(255, 255, 255, 0.265);
+    transition: .3s linear;
+    min-height: 450px;
+}
+
+.four-img-sec:hover {
+
+    background-color: #03060fa4;
+    transition: .4s linear;
+    filter: brightness(1000%);
+
+}
+
+
+.zoom-box::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #02040862;
+    z-index: -1;
+    transition: .3s linear;
+}
+
+.zoom-box:hover::before {
+    z-index: 11;
+    transition: .3s linear;
+}
+
+
+.zoom-box:hover img {
+    scale: 1.1;
+    transition: .3s linear;
+}
+
+.zoom-box:hover .zoom {
+    opacity: 1 !important;
+    z-index: 111111;
+    transition: .3s linear;
+}
+
+.sec-two-card {
+    position: relative;
+    overflow: hidden;
+    z-index: 1111;
+}
+
+.sec-two-card::before {
+    content: '';
+    width: 100% !important;
+    height: 100% !important;
+    top: 50%;
+    left: 50%;
+    background-color: #000000a9 !important;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-45deg) skew(45deg, 45deg);
+}
+
+
+.sec-two-card:hover::before {
+    transform: translate(-50%, -50%) rotate(0deg) skew(0);
+    transition: 1s linear;
+}
+
+/* 
+
+.owl-nav {
+    width: 100%;
+    left: 20%;
+    top: 25%;
+    color: white;
+    position: absolute;
+    left: 0;
+    z-index: 111;
+    font-size: 100px;
+    display: flex !important;
+    justify-content: space-between ! important;
+    padding: 0 50px;
+} */
+
+@media only screen and (max-width:1024px) {
+    .six-sec-img {
+        height: 300px !important;
+    }
+
+    .zoom-box {
+        width: 300px !important;
+    }
+
+    .thirth-container {
+        height: 40vh !important;
+    }
+
+    .thirth-sec-row {
+        height: 350px !important;
+    }
+
+    .carousel-item {
+        height: 750px !important;
+    }
+
+    .first-row {
+        height: 750px !important;
+    }
+
+    .four-img-sec {
+        height: 80px !important;
+    }
+
+    .four-sec {
+        height: 600px !important;
+    }
+
+}
+
+@media only screen and (max-width:430px) {
+    .parent-div {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        gap: 10px;
+        margin-top: 50px !important;
+    }
+
+    .last-footer {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: start !important;
+    }
+
+    /* .thirth-container {
+        height: 90vh !important;
+        border: 3px solid green;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    } */
+
+    .last-footer h1 {
+        margin-right: 180px !important;
+    }
+
+    .six-sec-img {
+        height: 250px !important;
+    }
+
+      .thirth-container {
+        height: 95vh !important;
+        padding: 50px;
+    }
+
+
+}
+

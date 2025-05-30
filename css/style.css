@@ -201,6 +201,15 @@
         margin-top: 50px !important;
     }
 
+    .tittle-div {
+        width: 380px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-size: 15px;
+    }
+
     .last-footer {
         display: flex !important;
         align-items: center !important;
@@ -220,7 +229,18 @@
     }
 
     .six-sec-img {
-        height: 250px !important;
+        height: 230px !important;
+    }
+
+    .app-div {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 3px;
+    }
+
+    .footer-img {
+         height: 25px;
     }
 
       .thirth-container {
